@@ -1,0 +1,117 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* css files imports */
+@import url("sections/body.css");
+@import url("sections/wrapper.css");
+
+:root {
+  /* Weather Background Gradients */
+
+  --clear-gradient-color: linear-gradient(
+    -45deg,
+    hsl(195, 100%, 65%) 30%,
+    hsl(195, 100%, 50%) 60%
+  );
+  --snow-gradient-color: linear-gradient(
+    -45deg,
+    hsl(195, 100%, 85%) 30%,
+    hsl(195, 100%, 70%) 60%
+  );
+  --haze-gradient-color: linear-gradient(
+    -45deg,
+    hsl(195, 85%, 80%) 30%,
+    hsl(195, 85%, 60%) 60%
+  );
+  --cloud-gradient-color: linear-gradient(
+    -45deg,
+    hsl(210, 100%, 65%) 30%,
+    hsl(210, 100%, 50%) 60%
+  );
+  --rain-gradient-color: linear-gradient(
+    -45deg,
+    hsl(225, 90%, 60%) 30%,
+    hsl(225, 90%, 50%) 60%
+  );
+  --storm-gradient-color: linear-gradient(
+    -45deg,
+    hsl(265, 100%, 60%) 30%,
+    hsl(265, 100%, 45%) 60%
+  );
+  --night-gradient-color: linear-gradient(
+    -45deg,
+    hsl(240, 100%, 20%) 30%,
+    hsl(240, 100%, 10%) 60%
+  );
+
+  /* Weather Card's Box-Shadows */
+
+  --clear-box-shadow: hsla(195, 100%, 40%, 0.7) 0px 4px 4px 0px;
+  --snow-box-shadow: hsla(195, 100%, 40%, 0.7) 0px 4px 4px 0px;
+  --cloud-box-shadow: hsla(210, 100%, 40%, 0.7) 0px 4px 4px 0px;
+  --haze-box-shadow: hsla(195, 85%, 40%, 0.7) 0px 4px 4px 0px;
+  --rain-box-shadow: hsla(225, 100%, 40%, 0.7) 0px 4px 4px 0px;
+  --storm-box-shadow: hsla(265, 100%, 40%, 0.7) 0px 4px 4px 0px;
+  --night-box-shadow: hsla(240, 100%, 5%, 0.7) 0px 4px 4px 0px;
+
+  /* Primary Colors */
+
+  --clear-primary-color: hsl(195, 100%, 50%);
+  --snow-primary-color: hsl(195, 100%, 70%);
+  --cloud-primary-color: hsl(210, 100%, 50%);
+  --haze-primary-color: hsl(195, 85%, 60%);
+  --rain-primary-color: hsl(225, 90%, 50%);
+  --storm-primary-color: hsl(265, 100%, 45%);
+  --night-primary-color: hsl(240, 100%, 10%);
+
+  /* Weather App Colors */
+
+  --primary-color: var(--clear-primary-color);
+  --bg-gradient-color: var(--clear-gradient-color);
+  --box-shadow-color: var(--clear-box-shadow);
+}
+
+/* Theme Classes */
+
+.clear-sky {
+  --primary-color: var(--clear-primary-color);
+  --bg-gradient-color: var(--clear-gradient-color);
+  --box-shadow-color: var(--clear-box-shadow);
+}
+.snow-sky {
+  --primary-color: var(--snow-primary-color);
+  --bg-gradient-color: var(--snow-gradient-color);
+  --box-shadow-color: var(--snow-box-shadow);
+}
+.cloud-sky {
+  --primary-color: var(--cloud-primary-color);
+  --bg-gradient-color: var(--cloud-gradient-color);
+  --box-shadow-color: var(--cloud-box-shadow);
+}
+.rain-sky {
+  --primary-color: var(--rain-primary-color);
+  --bg-gradient-color: var(--rain-gradient-color);
+  --box-shadow-color: var(--rain-box-shadow);
+}
+.storm-sky {
+  --primary-color: var(--storm-primary-color);
+  --bg-gradient-color: var(--storm-gradient-color);
+  --box-shadow-color: var(--storm-box-shadow);
+}
+.haze-sky {
+  --primary-color: var(--haze-primary-color);
+  --bg-gradient-color: var(--haze-gradient-color);
+  --box-shadow-color: var(--haze-box-shadow);
+}
+.night-sky {
+  --primary-color: var(--night-primary-color);
+  --bg-gradient-color: var(--night-gradient-color);
+  --box-shadow-color: var(--night-box-shadow);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
